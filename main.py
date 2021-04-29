@@ -56,8 +56,11 @@ def offer(self):
     for element in flag:
         offer_n = element.text
     
-    return offer_n
-
+    try:
+        return offer_n
+    except:
+        offer_n = None
+        return offer_n
 
 def price_list(self):
     # Product_Price and Sale_Price
